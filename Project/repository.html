@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repository</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <span>Hello, <b>User</b></span>
+        <button onclick="location.href='login.html'">Logout</button>
+    </div>
+    
+    <div class="tabs">
+        <button onclick="location.href='mywork.html'">MyWork</button>
+        <button onclick="location.href='repository.html'">Repository</button>
+        <button onclick="location.href='forum.html'">Forum</button>
+        <button onclick="location.href='exam.html'">Online Exam</button>
+    </div>
+    <div class="container">
+        <h1>Repository</h1>
+        <form id="fileUploadForm" enctype="multipart/form-data">
+            <label for="file">Upload File:</label>
+            <input type="file" id="file" name="file" required>
+            <button type="submit">Upload</button>
+        </form>
+    
+        <div id="upload-success" style="display:none;">
+            <p>File uploaded successfully!</p>
+        </div>
+    
+        <h2>Uploaded Files</h2>
+        <div class="file-list">
+            <ul id="file-list">
+                <!-- File list dynamically populated by JavaScript -->
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <span>Hello, <b>User</b></span>
+        <button onclick="location.href='login.html'">Logout</button>
+    </div>
+    
+    <div class="tabs">
+        <button onclick="location.href='mywork.html'">MyWork</button>
+        <button onclick="location.href='repository.html'">Repository</button>
+        <button onclick="location.href='forum.html'">Forum</button>
+        <button onclick="location.href='exam.html'">Online Exam</button>
+    </div>
+    <h2>Forum</h2>
+    <form action="#" method="POST">
+        <label for="query">Post your query:</label>
+        <textarea id="query" name="query" rows="4" cols="50"></textarea>
+        <br>
+        <button type="submit">Post</button>
+    </form>
+
+    <div class="container">
+        <h1>Forum</h1>
+        <form id="forumForm">
+            <label for="question">Ask a Question:</label>
+            <textarea id="question" name="question" rows="4" required></textarea>
+            <button type="submit">Post Question</button>
+        </form>
+    
+        <div id="question-post-success" style="display:none;">
+            <p>Question posted successfully!</p>
+        </div>
+    
+        <h2>Questions</h2>
+        <div class="question-list">
+            <ul id="question-list">
+                <!-- Questions dynamically populated by JavaScript -->
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

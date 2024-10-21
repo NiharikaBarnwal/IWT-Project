@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exam</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <span>Hello, <b>User</b></span>
+        <button onclick="location.href='login.html'">Logout</button>
+    </div>
+    
+    <div class="tabs">
+        <button onclick="location.href='mywork.html'">MyWork</button>
+        <button onclick="location.href='repository.html'">Repository</button>
+        <button onclick="location.href='forum.html'">Forum</button>
+        <button onclick="location.href='exam.html'">Online Exam</button>
+    </div>
+    <div class="container">
+        <h1>Online Exam</h1>
+        <p>Select the subject to take the exam and read the instructions before starting.</p>
+        
+        <label for="subject">Select Subject:</label>
+        <select id="subject">
+            <option value="math">Math</option>
+            <option value="science">Science</option>
+        </select>
+    
+        <div id="instructions">
+            <h2>Instructions</h2>
+            <p>Read all questions carefully. The exam is timed and auto-submits after the given time.</p>
+            <h3>Marking Scheme</h3>
+            <p>Each correct answer is worth 2 points.</p>
+        </div>
+    
+        <button id="start-exam">Start Exam</button>
+    </div>
+    
+</body>
+</html>

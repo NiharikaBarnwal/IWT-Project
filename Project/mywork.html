@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <span>Hello, <b>User</b></span>
+        <button onclick="location.href='login.html'">Logout</button>
+    </div>
+    
+    <div class="tabs">
+        <button onclick="location.href='mywork.html'">MyWork</button>
+        <button onclick="location.href='repository.html'">Repository</button>
+        <button onclick="location.href='forum.html'">Forum</button>
+        <button onclick="location.href='exam.html'">Online Exam</button>
+    </div>
+    <div class="container">
+        <h1>Submit Your Work</h1>
+        <form id="myWorkForm">
+            <label for="project-name">Project Name</label>
+            <input type="text" id="project-name" name="project-name" required>
+    
+            <label for="project-details">Project Details</label>
+            <textarea id="project-details" name="project-details" rows="4" required></textarea>
+    
+            <label for="tech-stack">Tech Stack</label>
+            <input type="text" id="tech-stack" name="tech-stack" required>
+    
+            <label for="code">Code</label>
+            <textarea id="code" name="code" rows="6" required></textarea>
+    
+            <label for="links">Links (optional)</label>
+            <input type="url" id="links" name="links">
+    
+            <button type="submit">Submit Work</button>
+        </form>
+    
+        <div id="work-submission-success" style="display:none;">
+            <p>Your work has been submitted successfully!</p>
+        </div>
+    </div>
+</body>
+</html>

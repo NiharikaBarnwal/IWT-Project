@@ -1,7 +1,96 @@
-
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+.navbar-links a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+.navbar-right a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Search Form Styling */
+.navbar-search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0px;
+}
+
+.navbar-search input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+}
+
+.navbar-search button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.navbar-search button:hover {
+    background-color: #555;
 }
 
 .login-container {
@@ -17,39 +106,9 @@ body {
     justify-content: space-between;
 }
 
-.tabs{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.tabs button {
-    margin: 10px;
-    padding: 20px;
-    background-color: #893168;
-    height: 140px;
-    width: 250px;
-    border-radius: 25px;
-    font-size: 30px;
-    color: #EAEAEA;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.tabs button:hover{
-    box-shadow: rgba(0, 0, 0, 0.785);
-    transform: scale(1.05);
-    cursor: pointer;
-}
 form {
     margin: 20px 0;
 }
-
-
-
-
-
-
-
 
 /* Basic Reset */
 * {
@@ -58,11 +117,6 @@ form {
     box-sizing: border-box;
 }
 
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-}
 
 nav ul {
     list-style: none;
@@ -95,7 +149,9 @@ nav ul li a:hover {
 }
 
 /* Forms and Input Styling */
-form input, form textarea, form select {
+form input,
+form textarea,
+form select {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -105,7 +161,7 @@ form input, form textarea, form select {
 
 form button {
     padding: 10px 15px;
-    background-color: #28a745;
+    background-color: #333;
     color: white;
     border: none;
     border-radius: 5px;
@@ -113,7 +169,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #218838;
+    background-color: #000000;
 }
 
 .file-list ul {
@@ -142,4 +198,45 @@ form button:hover {
     padding: 10px;
     border: 1px solid #d6e9c6;
     border-radius: 5px;
+}
+
+/* CSS Code for Footer */
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    color: #ddd;
+    padding: 20px 40px;
+    text-align: left;
+    /* Aligns the text to the left */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+.contact-info {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.contact-info a {
+    color: #b4b4b4;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-info a:hover {
+    color: #fff;
+}
+
+footer p:last-child {
+    font-size: 0.8rem;
+    color: #aaa;
 }

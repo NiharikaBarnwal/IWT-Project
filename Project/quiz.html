@@ -1,20 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>Grade 2 Science Quiz - Exam Portal</title>
+    <link rel="stylesheet" href="css/examstyles.css">
 </head>
 <body>
-    
-    <form action="">
-        <p><b>Ques 1. </b>Are you dumb?</p>
-        <input type="radio">Yes!
-        <input type="radio">Yesss!
-        <input type="radio">Obviously Yes!
-        <input type="radio">Absolutely Yes!<br>
-        <button type="submit">Next</button>
-        <button type="">Previous</button>
-    </form>
+    <div class="header">
+        <h1>Grade 2 Science Quiz</h1>
+        <span id="current-question">Question: 1/10</span>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <ul id="question-list">
+                <!-- Question numbers will be generated here -->
+            </ul>
+        </div>
+        <div class="main-content">
+            <div id="quiz-container">
+                <!-- Quiz questions will be injected here -->
+            </div>
+            <button id="next-btn" onclick="nextQuestion()">Save & Next</button>
+        </div>
+    </div>
+    <script src="js/examscript.js"></script>
 </body>
 </html>

@@ -1,42 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repository</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <div class="header">
-        <span>Hello, <b>User</b></span>
-        <button onclick="location.href='login.html'">Logout</button>
-    </div>
-    
-    <div class="tabs">
-        <button onclick="location.href='mywork.html'">MyWork</button>
-        <button onclick="location.href='repository.html'">Repository</button>
-        <button onclick="location.href='forum.html'">Forum</button>
-        <button onclick="location.href='exam.html'">Online Exam</button>
-    </div>
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="navbar-left">
+            <a href="home.html"><img src="source/logo sample.png" alt="Logo"></a>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="navbar-links">
+            <a href="mywall.html">MyWall</a>
+            <a href="repository.html">Repository</a>
+            <a href="forum.html">Forum</a>
+            <a href="exam.html">Online Exam</a>
+        </div>
+
+        <!-- Search Form -->
+        <form class="navbar-search">
+            <input type="text" placeholder="Search...">
+            <button type="submit">🔍</button>
+        </form>
+
+        <!-- User Info & Logout -->
+        <div class="navbar-right">
+            <span>Hello Student</span>
+            <a href="login.html">Logout</a>
+        </div>
+    </nav>
     <div class="container">
         <h1>Repository</h1>
         <form id="fileUploadForm" enctype="multipart/form-data">
+            <label for="project-name">Project Name</label>
+            <input type="text" id="project-name" name="project-name" required>
+
+            <label for="project-details">Project Details</label>
+            <textarea id="project-details" name="project-details" rows="4" required></textarea>
+
+            <label for="tech-stack">Tech Stack</label>
+            <input type="text" id="tech-stack" name="tech-stack" required>
+
+            <label for="links">Links (optional)</label>
+            <input type="url" id="links" name="links">
+
             <label for="file">Upload File:</label>
             <input type="file" id="file" name="file" required>
-            <button type="submit">Upload</button>
+            <button type="submit" style="margin-top: 10px;">Upload</button>
         </form>
-    
+
         <div id="upload-success" style="display:none;">
             <p>File uploaded successfully!</p>
         </div>
-    
-        <h2>Uploaded Files</h2>
+
+        <h2 style="margin-bottom: 30px;">Uploaded Files</h2>
         <div class="file-list">
             <ul id="file-list">
                 <!-- File list dynamically populated by JavaScript -->
             </ul>
         </div>
     </div>
-    
+    <footer>
+        <div class="footer-content">
+            <p>This is a project for IWT Lab by Niharika Barnwal and Siddharth Pal</p>
+            <p>&copy; 2024 Niharika Barnwal & Siddharth Pal. All rights reserved.</p>
+            <div class="contact-info">
+                <p>Contact Details:</p>
+                <p><a href="mailto:niharika@example.com">niharika@example.com</a> | <a
+                        href="mailto:siddharth@example.com">siddharth@example.com</a></p>
+                <p>Phone: +91 12345 67890</p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

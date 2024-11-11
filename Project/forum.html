@@ -1,50 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forum</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <div class="header">
-        <span>Hello, <b>User</b></span>
-        <button onclick="location.href='login.html'">Logout</button>
-    </div>
-    
-    <div class="tabs">
-        <button onclick="location.href='mywork.html'">MyWork</button>
-        <button onclick="location.href='repository.html'">Repository</button>
-        <button onclick="location.href='forum.html'">Forum</button>
-        <button onclick="location.href='exam.html'">Online Exam</button>
-    </div>
-    <h2>Forum</h2>
-    <form action="#" method="POST">
-        <label for="query">Post your query:</label>
-        <textarea id="query" name="query" rows="4" cols="50"></textarea>
-        <br>
-        <button type="submit">Post</button>
-    </form>
 
-    <div class="container">
-        <h1>Forum</h1>
-        <form id="forumForm">
-            <label for="question">Ask a Question:</label>
-            <textarea id="question" name="question" rows="4" required></textarea>
-            <button type="submit">Post Question</button>
+<body>
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="navbar-left">
+            <a href="home.html"><img src="source/logo sample.png" alt="Logo"></a>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="navbar-links">
+            <a href="mywall.html">MyWall</a>
+            <a href="repository.html">Repository</a>
+            <a href="forum.html">Forum</a>
+            <a href="exam.html">Online Exam</a>
+        </div>
+
+        <!-- Search Form -->
+        <form class="navbar-search">
+            <input type="text" placeholder="Search...">
+            <button type="submit">🔍</button>
         </form>
-    
+
+        <!-- User Info & Logout -->
+        <div class="navbar-right">
+            <span>Hello Student</span>
+            <a href="login.html">Logout</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 style="margin-top: 20px;">Forum</h1>
+        <form action="#" method="POST">
+            <label for="query">Post your query:</label>
+            <textarea id="query" name="query" rows="4" cols="50"></textarea>
+            <br>
+            <button type="submit">Post</button>
+        </form>
+    </div>
+    <div class="container">
+        <h1>Query List</h1>
+        <form id="forumForm">
+            <label for="question">Questions asked:</label>
+            <textarea id="question" name="question" rows="4" required></textarea>
+            <button type="submit">Reply</button>
+        </form>
+
         <div id="question-post-success" style="display:none;">
             <p>Question posted successfully!</p>
         </div>
-    
-        <h2>Questions</h2>
+
+        <h2 style="margin-top: 20px;">Questions</h2>
         <div class="question-list">
             <ul id="question-list">
                 <!-- Questions dynamically populated by JavaScript -->
             </ul>
         </div>
     </div>
-    
+    <footer>
+        <div class="footer-content">
+            <p>This is a project for IWT Lab by Niharika Barnwal and Siddharth Pal</p>
+            <p>&copy; 2024 Niharika Barnwal & Siddharth Pal. All rights reserved.</p>
+            <div class="contact-info">
+                <p>Contact Details:</p>
+                <p><a href="mailto:niharika@example.com">niharika@example.com</a> | <a
+                        href="mailto:siddharth@example.com">siddharth@example.com</a></p>
+                <p>Phone: +91 12345 67890</p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

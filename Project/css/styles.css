@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -110,14 +109,6 @@ form {
     margin: 20px 0;
 }
 
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 nav ul {
     list-style: none;
     display: flex;
@@ -145,7 +136,6 @@ nav ul li a:hover {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Forms and Input Styling */
@@ -181,22 +171,6 @@ form button:hover {
     background-color: #f1f1f1;
     margin: 10px 0;
     padding: 10px;
-    border-radius: 5px;
-}
-
-.question {
-    padding: 10px 0;
-}
-
-.question label {
-    font-weight: bold;
-}
-
-.result {
-    margin-top: 20px;
-    background-color: #dff0d8;
-    padding: 10px;
-    border: 1px solid #d6e9c6;
     border-radius: 5px;
 }
 
@@ -240,3 +214,4 @@ footer p:last-child {
     font-size: 0.8rem;
     color: #aaa;
 }
+

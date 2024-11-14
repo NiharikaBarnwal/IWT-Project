@@ -107,7 +107,8 @@ function showResults() {
     const questionContainer = document.getElementById("quiz-container");
     questionContainer.innerHTML = `
         <h2>Your Score: ${score} / ${questions.length}</h2>
-        <a href="home.html"><button id="go-home">Go Home</button></a>
+        <a href="quiz.html"><button id="retake">Retake Exam</button></a>
+        <a href="home_2.html"><button id="go-home">Go Home</button></a>
     `;
     document.getElementById("next-btn").style.display = "none";
 }

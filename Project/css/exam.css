@@ -1,3 +1,11 @@
+html, body{
+    height: 100%;
+}
+
+.container{
+    min-height: 62.2%;
+}
+
 #start-exam {
     background-color: #333;
     padding: 10px 20px;
@@ -9,7 +17,6 @@
     cursor: pointer;
     background-color: #000000;
 }
-
 
 .custom-select {
     appearance: none;
@@ -34,4 +41,8 @@
 
 .custom-select option {
     padding: 8px;
+}
+
+footer{
+    position: relative;
 }

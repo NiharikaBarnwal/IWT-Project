@@ -3,17 +3,13 @@ html, body{
 }
 
 .content {
+    margin-top: 50px;
     min-height: 100%;
-    margin-top: 20px;
     padding: 20px;
-    vertical-align: middle;
 }
 .content h1{
     font-size: 60px;
-}
-
-.content p{
-    font-size: 25px;
+    margin-bottom: 10px;
 }
 
 .content button{
@@ -30,4 +26,19 @@ html, body{
 
 footer{
     position: relative;
+}
+
+body {
+    background-image: url('/source/bgm_imgnorm.png'); /* Replace with your image path */
+    background-size: 1200px; /* Cover the entire viewport */
+    background-position-x: 520px;
+     /* Center the image */
+     background-position-y: 70px;
+    background-repeat: no-repeat; /* Prevent tiling */
+}
+.content p{
+    width: 660px;
+    margin-top: 20px;
+    font-size: medium;
+    line-height: 30px;
 }

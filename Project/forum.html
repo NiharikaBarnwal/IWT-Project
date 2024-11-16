@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forum</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/forum.css">
 </head>
 
 <body>
@@ -17,6 +18,7 @@
 
         <!-- Navigation Links -->
         <div class="navbar-links">
+            <a href="home_2.html">Home</a>
             <a href="mywall.html">MyWall</a>
             <a href="repository.html">Repository</a>
             <a href="forum.html">Forum</a>
@@ -46,21 +48,32 @@
     </div>
     <div class="container">
         <h1>Query List</h1>
-        <form id="forumForm">
-            <label for="question">Questions asked:</label>
-            <textarea id="question" name="question" rows="4" required></textarea>
-            <button type="submit">Reply</button>
-        </form>
+        <div class="forum-container">
+            <!-- Sample Post 1 -->
+            <div class="post" id="post-1">
+                <div class="post-title">How to prepare for final exams?</div>
+                <div class="post-content">Share your strategies for exam preparation and tips for effective study
+                    sessions.</div>
+                <button class="reply-button" onclick="toggleReplyForm(1)">Reply</button>
+                <div class="reply-form" id="reply-form-1">
+                    <textarea id="reply-input-1" placeholder="Write your reply..."></textarea>
+                    <button class="submit-reply" onclick="submitReply(1)">Submit</button>
+                </div>
+                <div id="replies-1"></div>
+            </div>
 
-        <div id="question-post-success" style="display:none;">
-            <p>Question posted successfully!</p>
-        </div>
-
-        <h2 style="margin-top: 20px;">Questions</h2>
-        <div class="question-list">
-            <ul id="question-list">
-                <!-- Questions dynamically populated by JavaScript -->
-            </ul>
+            <!-- Sample Post 2 -->
+            <div class="post" id="post-2">
+                <div class="post-title">Best resources for learning Python?</div>
+                <div class="post-content">Looking for the most effective books, courses, or websites to learn Python.
+                </div>
+                <button class="reply-button" onclick="toggleReplyForm(2)">Reply</button>
+                <div class="reply-form" id="reply-form-2">
+                    <textarea id="reply-input-2" placeholder="Write your reply..."></textarea>
+                    <button class="submit-reply" onclick="submitReply(2)">Submit</button>
+                </div>
+                <div id="replies-2"></div>
+            </div>
         </div>
     </div>
     <footer>
@@ -75,6 +88,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/forum.js"></script>
 </body>
 
 </html>

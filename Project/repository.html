@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repository</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/repository.css">
 </head>
 
 <body>
@@ -17,6 +18,7 @@
 
         <!-- Navigation Links -->
         <div class="navbar-links">
+            <a href="home_2.html">Home</a>
             <a href="mywall.html">MyWall</a>
             <a href="repository.html">Repository</a>
             <a href="forum.html">Forum</a>
@@ -59,11 +61,45 @@
             <p>File uploaded successfully!</p>
         </div>
 
-        <h2 style="margin-bottom: 30px;">Uploaded Files</h2>
-        <div class="file-list">
-            <ul id="file-list">
-                <!-- File list dynamically populated by JavaScript -->
-            </ul>
+        <h2 style="margin-bottom: 20px;">Uploaded Files</h2>
+        <div>
+            <table class="file-list">
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>File Type</th>
+                        <th>Last Updated</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="project-name">Project Alpha</td>
+                        <td>PDF</td>
+                        <td class="update-info">2024-11-01</td>
+                        <td>Documentation and project overview.</td>
+                    </tr>
+                    <tr>
+                        <td class="project-name">Project Beta</td>
+                        <td>ZIP</td>
+                        <td class="update-info">2024-10-25</td>
+                        <td>Source code and related files.</td>
+                    </tr>
+                    <tr>
+                        <td class="project-name">Project Gamma</td>
+                        <td>DOCX</td>
+                        <td class="update-info">2024-11-10</td>
+                        <td>Technical report with in-depth analysis.</td>
+                    </tr>
+                    <tr>
+                        <td class="project-name">Project Delta</td>
+                        <td>PNG</td>
+                        <td class="update-info">2024-11-08</td>
+                        <td>Design mockups for UI/UX presentation.</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
         </div>
     </div>
     <footer>

@@ -46,3 +46,13 @@ html, body{
 footer{
     position: relative;
 }
+
+.instructions{
+    margin-left: 30px;
+    line-height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+ul li::marker {
+    color: #512da8;
+}

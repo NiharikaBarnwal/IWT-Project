@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/forum.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="navbar-left">
+            <a href="home_2.html"><img src="source/logo sample.png" alt="Logo"></a>
+            <p class="Website_name outfit-title">
+          Study <br />
+          Nexus
+        </p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="navbar-links">
+            <a href="home_2.html">Home</a>
+            <a href="mywall.html">MyWall</a>
+            <a href="repository.html">Repository</a>
+            <a href="forum.html" style="color: #c9d6ff; text-decoration: underline;">Forum</a>
+            <a href="exam.html">Online Exam</a>
+        </div>
+
+        <!-- Search Form -->
+        <form class="navbar-search">
+            <input type="text" placeholder="Search...">
+            <button type="submit">🔍</button>
+        </form>
+
+        <!-- User Info & Logout -->
+        <div class="navbar-right">
+            <span>Hello Student</span>
+            <a href="home.html">Logout</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 style="margin-top: 20px;">Forum</h1>
+        <form action="#" method="POST">
+            <label for="query">Post your query:</label>
+            <textarea id="query" name="query" rows="4" cols="50"></textarea>
+            <br>
+            <button type="submit">Post</button>
+        </form>
+    </div>
+    <div class="container">
+        <h1>Query List</h1>
+        <div class="forum-container">
+            <!-- Sample Post 1 -->
+            <div class="post" id="post-1">
+                <div class="post-title">How to prepare for final exams?</div>
+                <div class="post-content">Share your strategies for exam preparation and tips for effective study
+                    sessions.</div>
+                <button class="reply-button" onclick="toggleReplyForm(1)">Reply</button>
+                <div class="reply-form" id="reply-form-1">
+                    <textarea id="reply-input-1" placeholder="Write your reply..."></textarea>
+                    <button class="submit-reply" onclick="submitReply(1)">Submit</button>
+                </div>
+                <div id="replies-1"></div>
+            </div>
+
+            <!-- Sample Post 2 -->
+            <div class="post" id="post-2">
+                <div class="post-title">Best resources for learning Python?</div>
+                <div class="post-content">Looking for the most effective books, courses, or websites to learn Python.
+                </div>
+                <button class="reply-button" onclick="toggleReplyForm(2)">Reply</button>
+                <div class="reply-form" id="reply-form-2">
+                    <textarea id="reply-input-2" placeholder="Write your reply..."></textarea>
+                    <button class="submit-reply" onclick="submitReply(2)">Submit</button>
+                </div>
+                <div id="replies-2"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>This is a project for IWT Lab by Niharika Barnwal and Siddharth Pal</p>
+            <p>&copy; 2024 Niharika Barnwal & Siddharth Pal. All rights reserved.</p>
+            <div class="contact-info">
+                <p>Contact Details:</p>
+                <p><a href="mailto:niharika@example.com">niharika@example.com</a> | <a
+                        href="mailto:siddharth@example.com">siddharth@example.com</a></p>
+                <p>Phone: +91 12345 67890</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/forum.js"></script>
+</body>
+
+</html>

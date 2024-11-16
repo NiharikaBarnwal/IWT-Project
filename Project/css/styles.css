@@ -215,6 +215,25 @@ footer p:last-child {
     color: #aaa;
 }
 
+.Website_name{
+    color: #892eff;
+    
+}
+
+.navbar-left{
+    display: flex;
+    align-items: center; 
+    margin-right: 10px;
+    font-size: large;
+}
+
+.outfit-title{
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 .curr-page{
     color: #512da8;
 }

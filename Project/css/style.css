@@ -212,3 +212,6 @@ body{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+.logo{
+    height: 70px;
+}

@@ -1,137 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Exam</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/exam.css" />
-  </head>
 
-  <body>
-    <nav class="navbar">
-      <!-- Logo -->
-      <div class="navbar-left">
-        <a href="home_2.html"
-          ><img src="source/logo sample.png" alt="Logo"
-        /></a>
-        <p class="Website_name outfit-title">
-          Study <br />
-          Nexus
-        </p>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Exam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/exam.css" />
+</head>
 
-      <!-- Navigation Links -->
-      <div class="navbar-links">
-        <a href="home_2.html">Home</a>
-        <a href="mywall.html">MyWall</a>
-        <a href="repository.html">Repository</a>
-        <a href="forum.html">Forum</a>
-        <a href="exam.html" style="color: #c9d6ff; text-decoration: underline;">Online Exam</a>
-      </div>
-
-      <!-- Search Form -->
-      <form class="navbar-search">
-        <input type="text" placeholder="Search..." />
-        <button type="submit">🔍</button>
-      </form>
-
-      <!-- User Info & Logout -->
-      <div class="navbar-right">
-        <span>Hello Student</span>
-        <a href="home.html">Logout</a>
-      </div>
-    </nav>
-    <div class="container">
-      <h1>Online Exam</h1>
-      <p style="margin-top: 20px">
-        Select the subject to take the exam and read the instructions before
-        starting.
+<body>
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="navbar-left">
+      <a href="home_2.html"><img src="source/logo sample.png" alt="Logo" />
+      </a>
+      <p class="Website_name outfit-title">
+        Study <br>
+        Nexus
       </p>
-
-      <label for="subject">Select Subject:</label>
-      <select id="subject" class="custom-select">
-        <option value="math">Math</option>
-        <option value="science">Science</option>
-        <option value="english">English</option>
-      </select>
-
-      <div style="margin-top: 20px" id="instructions">
-        <h2>Instructions to Candidates</h2>
-        <div class="instructions">
-          <ul>
-            <li>
-              The exam duration is <span class="highlight">3 hours</span> (180
-              minutes).
-            </li>
-            <li>
-              You must attempt the paper in the order of your choice. However,
-              managing time efficiently is your responsibility.
-            </li>
-            <li>
-              Each question carries <span class="highlight">+1 mark</span> for a
-              correct answer.
-            </li>
-            <li>
-              <span class="highlight">No negative marking</span> for incorrect
-              answers.
-            </li>
-            <li>Unanswered questions will not have any penalty.</li>
-            <li>
-              Use the <span class="highlight">"Save and Next"</span> button
-              after answering each question.
-            </li>
-            <li>
-              You can use the
-              <span class="highlight">"Mark for Review"</span> option to revisit
-              a question later.
-            </li>
-            <li>
-              Do not refresh the page or press the back button during the exam.
-              This may lead to disqualification.
-            </li>
-            <li>
-              All calculations should be performed on the provided rough sheets.
-            </li>
-            <li>
-              You must submit the exam before the timer ends. If not, your
-              answers will be automatically submitted.
-            </li>
-            <li>
-              Ensure that you have read and understood all questions before
-              attempting them.
-            </li>
-          </ul>
-        </div>
-        <p class="highlight">
-          <b
-            >Note: Violation of instructions may result in disqualification.
-            Please adhere to the rules strictly.</b
-          >
-        </p>
-      </div>
-
-      <a href="quiz.html"
-        ><button style="margin-top: 20px" id="start-exam">Start Exam</button></a
-      >
     </div>
-    <footer>
-      <div class="footer-content">
-        <p>
-          This is a project for IWT Lab by Niharika Barnwal and Siddharth Pal
-        </p>
-        <p>
-          &copy; 2024 Niharika Barnwal & Siddharth Pal. All rights reserved.
-        </p>
-        <div class="contact-info">
-          <p>Contact Details:</p>
-          <p>
-            <a href="mailto:niharika@example.com">niharika@example.com</a> |
-            <a href="mailto:siddharth@example.com">siddharth@example.com</a>
-          </p>
-          <p>Phone: +91 12345 67890</p>
-        </div>
+
+    <!-- Navigation Links -->
+    <div class="navbar-links">
+      <a href="home_2.html">Home</a>
+      <a href="mywall.html">MyWall</a>
+      <a href="repository.html">Repository</a>
+      <a href="forum.html">Forum</a>
+      <a href="exam.html" style="color: #c9d6ff; text-decoration: underline;">Online Exam</a>
+    </div>
+
+    <!-- Search Form -->
+    <form class="navbar-search">
+      <input type="text" placeholder="Search..." />
+      <button type="submit">🔍</button>
+    </form>
+
+    <!-- User Info & Logout -->
+    <div class="navbar-right">
+      <span>Hello Student</span>
+      <a href="home.html">Logout</a>
+    </div>
+  </nav>
+  <div class="container">
+    <h1>Online Exam</h1>
+    <p style="margin-top: 20px">
+      Select the subject to take the exam and read the instructions before
+      starting.
+    </p>
+
+    <label for="subject">Select Subject:</label>
+    <select id="subject" class="custom-select">
+      <option value="math">Math</option>
+      <option value="science">Science</option>
+      <option value="english">English</option>
+    </select>
+
+    <div style="margin-top: 20px" id="instructions">
+      <h2>Instructions to Candidates</h2>
+      <div class="instructions">
+        <ul>
+          <li>
+            The exam duration is <span class="highlight">3 hours</span> (180
+            minutes).
+          </li>
+          <li>
+            You must attempt the paper in the order of your choice. However,
+            managing time efficiently is your responsibility.
+          </li>
+          <li>
+            Each question carries <span class="highlight">+1 mark</span> for a
+            correct answer.
+          </li>
+          <li>
+            <span class="highlight">No negative marking</span> for incorrect
+            answers.
+          </li>
+          <li>Unanswered questions will not have any penalty.</li>
+          <li>
+            Use the <span class="highlight">"Save and Next"</span> button
+            after answering each question.
+          </li>
+          <li>
+            You can use the
+            <span class="highlight">"Mark for Review"</span> option to revisit
+            a question later.
+          </li>
+          <li>
+            Do not refresh the page or press the back button during the exam.
+            This may lead to disqualification.
+          </li>
+          <li>
+            All calculations should be performed on the provided rough sheets.
+          </li>
+          <li>
+            You must submit the exam before the timer ends. If not, your
+            answers will be automatically submitted.
+          </li>
+          <li>
+            Ensure that you have read and understood all questions before
+            attempting them.
+          </li>
+        </ul>
       </div>
-    </footer>
-  </body>
+      <p class="highlight">
+        <b>Note: Violation of instructions may result in disqualification.
+          Please adhere to the rules strictly.</b>
+      </p>
+    </div>
+
+    <a href="quiz.html"><button style="margin-top: 20px" id="start-exam">Start Exam</button></a>
+  </div>
+  <footer>
+    <div class="footer-content">
+      <p>
+        This is a project for IWT Lab by Niharika Barnwal and Siddharth Pal
+      </p>
+      <p>
+        &copy; 2024 Niharika Barnwal & Siddharth Pal. All rights reserved.
+      </p>
+      <div class="contact-info">
+        <p>Contact Details:</p>
+        <p>
+          <a href="mailto:niharika@example.com">niharika@example.com</a> |
+          <a href="mailto:siddharth@example.com">siddharth@example.com</a>
+        </p>
+        <p>Phone: +91 12345 67890</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

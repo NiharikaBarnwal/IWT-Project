@@ -19,6 +19,7 @@
 <body>
 
     <div class="container" id="container">
+        <!-- Sign Up Form -->
         <div class="form-container sign-up">
             <form action="home_2.html">
                 <div class="titlehead"><img class="logo" src="source/Logo_with_name.png" alt=""></div>
@@ -29,15 +30,30 @@
                     <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
                     <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
-                <span>or use your email for registeration</span>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <button>Sign Up</button>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="text" placeholder="Address">
+                <input type="date" placeholder="DOB">
+                <div class="gender">
+                    <label>
+                        <input type="radio" name="gender" value="male" /> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female" /> Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="other" /> Other
+                    </label>
+                </div>
+                <button type="submit">Sign Up</button>
             </form>
         </div>
+
+        <!-- Sign In Form -->
         <div class="form-container sign-in">
-            <form action="home_2.html">
+            <form id="loginForm" >
                 <div class="titlehead"><img class="logo" src="source/Logo_with_name.png" alt=""></div>
                 <h1>Sign In</h1>
                 <div class="social-icons">
@@ -46,23 +62,25 @@
                     <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
                     <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
-                <span>or use your email password</span>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+                <span>or use your email and password</span>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
                 <a href="#">Forget Your Password?</a>
-                <button>Sign In</button>
+                <button type="submit">Sign In</button>
             </form>
         </div>
+
+        <!-- Toggle for Sign In and Sign Up -->
         <div class="toggle-container">
             <div class="toggle">
                 <div class="toggle-panel toggle-left">
                     <h1>Welcome Back!</h1>
-                    <p>Enter your personal details to use all of site features</p>
+                    <p>Enter your personal details to use all of the site's features</p>
                     <button class="hidden" id="login">Sign In</button>
                 </div>
                 <div class="toggle-panel toggle-right">
                     <h1>Hello, Friend!</h1>
-                    <p>Register with your personal details to use all of site features</p>
+                    <p>Register with your personal details to use all of the site's features</p>
                     <button class="hidden" id="register">Sign Up</button>
                 </div>
             </div>

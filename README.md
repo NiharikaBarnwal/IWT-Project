@@ -3,7 +3,7 @@
 *Course:* Internet and Web Technologies (IWT)  
 
 ## 📌 Project Overview  
-This is a *Student ERP System, a web-based platform designed to manage student activities and academic information. The project is entirely **frontend-based, built using **HTML, CSS, and JavaScript*, without any backend or authentication system.  
+This is a Student ERP System, a web-based platform designed to manage student activities and academic information. The project is entirely frontend-based, built using *HTML, CSS, and JavaScript*, without any backend or authentication system.  
 
 ## 📂 Project Structure  
 The project consists of multiple HTML pages, each serving a different function:  
